@@ -1,7 +1,0 @@
-{
-    "hostname": "example.demandware.net",
-    "username": "user",
-    "password": "password",
-    "cartridgesPath": "cartridgeA:cartridgeB",
-    "code-version": "version2"
-}
