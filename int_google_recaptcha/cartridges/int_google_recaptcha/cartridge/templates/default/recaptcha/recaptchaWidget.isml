@@ -1,0 +1,9 @@
+<isif condition="${require('*/cartridge/scripts/helpers/recaptchaHelper').isEnabled()}">
+    <div class="g-recaptcha"
+         data-sitekey="${require('*/cartridge/scripts/helpers/recaptchaHelper').getSiteKey()}"
+         data-callback="verifyRecaptchaCallback"
+         data-expired-callback="expiredRecaptchaCallback"
+         data-verify-url="${URLUtils.url('ReCaptcha-Verify')}">
+    </div>
+    <div class="invalid-feedback recaptcha-error"></div>
+</isif>
