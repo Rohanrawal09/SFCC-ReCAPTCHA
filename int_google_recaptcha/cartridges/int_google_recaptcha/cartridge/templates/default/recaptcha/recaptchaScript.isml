@@ -1,0 +1,3 @@
+<isif condition="${require('*/cartridge/scripts/helpers/recaptchaHelper').isEnabled()}">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</isif>
