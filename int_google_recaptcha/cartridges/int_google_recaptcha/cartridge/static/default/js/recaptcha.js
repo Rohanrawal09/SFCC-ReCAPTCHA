@@ -30,3 +30,17 @@
         grecaptcha.reset();
     };
 })();
+
+$(document).ready(function() {
+    $('#login-form, #create-account-form').submit(function(event) {
+        // Perform your validation checks here
+        var isValid = true; // Replace with your actual validation logic
+
+        if (!isValid) {
+            // Prevent form submission
+            event.preventDefault();
+            // Reset the reCAPTCHA widget
+            grecaptcha.reset();
+        }
+    });
+});

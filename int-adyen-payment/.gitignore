@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+node_modules
+dw.json
+/.vscode/
+/coverage/
+screenshots/
