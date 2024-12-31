@@ -33,7 +33,7 @@ function getCountryCode(currentBasket, locale) {
 }
 
 function getConnectedTerminals() {
-  if (PaymentMgr.getPaymentMethod(constants.METHOD_ADYEN_POS).isActive()) {
+  if (PaymentMgr.getPaymentMethod(constants.METHOD_ADYEN_POS) && PaymentMgr.getPaymentMethod(constants.METHOD_ADYEN_POS).isActive()) {
     return adyenTerminalApi.getTerminals().response;
   }
 
